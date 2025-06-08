@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himmat Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    :root {
+      --primary: #7f5af0;
+      --background: #16161a;
+      --text: #fffffe;
+      --secondary: #94a1b2;
+      --accent: #2cb67d;
+      --card-bg: #242629;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <img src="./Himmat Logo.png" alt="Logo" style="height: 80px;">
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#Achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section class="hero">
+  <h1>Hi, I'm HIMMAT HEKMATULLAH</h1>
+  <p>Front-End Developer | Data Visualization | Aspiring IT Specialist | Project Management | Graphic Designer</p>
+  <a href="./willkommen-en.pdf" class="download-cv" target="_blank">Motivation Letter</a>
+  <a href="./BUKU 2023_EN.pdf" class="download-cv" target="_blank">Download CV</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I am a dedicated and goal-oriented IT professional with a Bachelor's degree in Information Technology, a Diploma in IT, and hands-on experience in the field. I recently received a Front-End Development 
+    <a href="./Internship Offer Letter.pdf" target="_blank" style="color: red;">Internship Offer Letter</a>
+    from Code Alpha, running from June 10th to July 10th. This opportunity will help me strengthen my practical skills and prepare myself for the next big step—starting real learning with Powercoders.
+    Currently, I’m also improving my German at the B1 level and fully committed to growing professionally, contributing my knowledge, and successfully integrating into the Swiss job market.
+  </p>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="filter-buttons">
+    <button class="active" onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('web')">Cloud Computing – Final Project (Thesis)</button>
+    <button onclick="filterProjects('linux')">Himmat Restaurant Website – Front-End Project</button>
+    <button onclick="filterProjects('design')">NextGen Coders</button>
+  </div>
+  <div class="projects">
+    <div class="card show" data-category="web">
+      <img src="./cloud.png" alt="Project 1">
+      <div class="card-content">
+        <h3>Cloud Computing – Final Project (Thesis)</h3>
+        <p>As the final thesis of my Bachelor's degree, this project allowed me to explore the fundamentals and future potential of cloud computing...<br><br>
+        <a href="./MARYAM UNIVERSITY.pdf" class="button-red" target="_blank">Cloud Computing Final Project</a></p>
+      </div>
+    </div>
+
+    <div class="card show" data-category="linux">
+      <img src="./Restaurant.png" alt="Project 2">
+      <div class="card-content">
+        <h3>Himmat Restaurant Website – Front-End Project</h3>
+        <p>This is a responsive restaurant website I created to practice and demonstrate my front-end development skills...<br><br>
+        <a href="https://himmat-restauranta1.netlify.app/" class="button-red" target="_blank">Visit Himmat Restaurant Website</a></p>
+      </div>
+    </div>
+
+    <div class="card show" data-category="design">
+      <img src="./Team Board.png" alt="Project 3">
+      <div class="card-content">
+        <h3>NextGen Coders</h3>
+        <p>NextGen Coders is a website I developed using HTML and CSS to inspire and empower students interested in coding and technology...<br><br>
+        <a href="https://nextgen-coders1.netlify.app/" class="button-red" target="_blank">Visit NextGen Coders Website</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Achievements" class="section">
+  <h2>All Achievements</h2>
+  <div class="filter-buttons">
+    <a href="./Typing Certification.pdf" target="_blank"><button>Typing Certificate</button></a>
+    <a href="https://cert.efset.org/XdfPTu" target="_blank"><button>English Language C1 Certificate</button></a>
+    <a href="https://www.linkedin.com/posts/hekmatullahhimmat_mentoring-inclusion-mittliv-activity-7332873227699961857-UrAn" target="_blank"><button>Mitt Liv Workshop Certificate</button></a>
+    <a href="./AOZ Bestätigung – Ehrenamtliche Unterstützung.pdf" target="_blank"><button>AOZ Bestätigung</button></a>
+    <a href="./Deutsch B1 Zertifikat.pdf" target="_blank"><button>Deutsch B1 Zertifikat</button></a>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hekmatullah Himmat — Built with 💻 in HTML & CSS |
+    <a href="mailto:h.himmat1000@gmail.com" style="color: var(--accent); text-decoration: none;">h.himmat1000@gmail.com</a>
+  </p>
+  <div style="margin-top: 0.5rem;">
+    <a href="https://www.linkedin.com/in/hekmatullahhimmat/" target="_blank" style="margin: 0 8px; color: #0A66C2;"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/himmat0193/" target="_blank" style="margin: 0 8px; color: #4267B2;"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/@Switzerland.2024" target="_blank" style="margin: 0 8px; color: #FF0000;"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:h.himmat1000@gmail.com" style="margin: 0 8px; color: var(--accent);"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Himmat2024" target="_blank" style="margin: 0 8px; color: #fff;"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/hekmatullah_10?s=11" target="_blank" style="margin: 0 8px; color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<script>
+  function filterProjects(category) {
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    const activeButton = Array.from(buttons).find(btn => btn.textContent.toLowerCase().includes(category));
+    if (activeButton) activeButton.classList.add('active');
+    const projects = document.querySelectorAll('[data-category]');
+    projects.forEach(project => {
+      if (category === 'all' || project.dataset.category === category) {
+        project.classList.add('show');
+      } else {
+        project.classList.remove('show');
+      }
+    });
+  }
+</script>
+</body>
+</html>
